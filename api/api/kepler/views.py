@@ -15,7 +15,7 @@ import csv, json
 @renderer_classes([JSONRenderer])
 def map_data(request):
 
-    # Load UK city dataset
+    # Load UK cities dataset
     city_data = []
     with open('api/kepler/data/gb.csv') as csv_file:
         csvReader = csv.DictReader(csv_file)
